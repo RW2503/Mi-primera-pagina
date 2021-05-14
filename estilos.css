@@ -42,7 +42,7 @@
   text-align: center;
 }
 .textoBiciMontaña__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoBiciPaseo {
   background-color: #324d33;
@@ -51,7 +51,7 @@
   text-align: center;
 }
 .textoBiciPaseo__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoBiciRuta {
   background-color: #4a4e50;
@@ -60,7 +60,7 @@
   text-align: center;
 }
 .textoBiciRuta__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoHombres {
   background-color: #14384d;
@@ -69,7 +69,7 @@
   text-align: center;
 }
 .textoHombres__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoMujeres {
   background-color: #39253f;
@@ -78,7 +78,7 @@
   text-align: center;
 }
 .textoMujeres__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoAccesorios {
   background-color: #523f18;
@@ -87,7 +87,7 @@
   text-align: center;
 }
 .textoAccesorios__adentro {
-  color: #21211D;
+  color: black;
 }
 .textoNegrita {
   color: black;
