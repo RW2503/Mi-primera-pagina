@@ -1,0 +1,668 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 40px 20px;
+  grid-template-areas: ". . . ."
+". . . ."
+". . . ."
+". . . .";
+}
+.fondoVideo {
+  background-color: black;
+}
+.fondoVideo__video {
+  height: 500px;
+  width: 100%;
+}
+.textoInicio {
+  background-color: black;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: -16px;
+}
+.textoInicio__adentro {
+  color: white;
+}
+.textoInicio__adentro--otro {
+  color: #5a2d2d;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.textoBiciMontaña {
+  background-color: #332e26;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoBiciMontaña__adentro {
+  color: #1a1816;
+}
+.textoBiciPaseo {
+  background-color: #324d33;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoBiciPaseo__adentro {
+  color: #253325;
+}
+.textoBiciRuta {
+  background-color: #4a4e50;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoBiciRuta__adentro {
+  color: #333536;
+}
+.textoHombres {
+  background-color: #14384d;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoHombres__adentro {
+  color: #112531;
+}
+.textoMujeres {
+  background-color: #39253f;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoMujeres__adentro {
+  color: #1a151b;
+}
+.textoAccesorios {
+  background-color: #523f18;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.textoAccesorios__adentro {
+  color: #3a2d14;
+}
+.textoNegrita {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.seccionInicio {
+  background-color: #141418;
+}
+.seccionMontaña {
+  background-color: #4e4538;
+}
+.seccionPaseo {
+  background-color: #406842;
+}
+.seccionRuta {
+  background-color: #5c6366;
+}
+.seccionHombre {
+  background-color: #184c69;
+}
+.seccionMujer {
+  background-color: #4c3055;
+}
+.seccionAccesorio {
+  background-color: #6b511d;
+}
+.seccionContacto {
+  background-color: #22222b;
+}
+.cardMTB {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #332e26;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardMTB::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardMTB:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardMTB:hover .imgBxMTB img {
+    max-width: 50%; }
+  .cardMTB:hover .contentBxMTB .buy {
+    top: 0;
+    opacity: 1; }
+  .cardMTB::after {
+    content: 'Montaña';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardMTB .imgBxMTB {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardMTB .imgBxMTB img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardMTB .contentBxMTB {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardMTB .contentBxMTB h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardMTB .contentBxMTB .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardMTB .contentBxMTB .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #4e4538;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+.cardPaseo {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #324d33;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardPaseo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardPaseo:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardPaseo:hover .imgBxPaseo img {
+    max-width: 50%; }
+  .cardPaseo:hover .contentBxPaseo .buy {
+    top: 0;
+    opacity: 1; }
+  .cardPaseo::after {
+    content: 'Paseo';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardPaseo .imgBxPaseo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardPaseo .imgBxPaseo img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardPaseo .contentBxPaseo {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardPaseo .contentBxPaseo h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardPaseo .contentBxPaseo .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardPaseo .contentBxPaseo .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #406842;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+.cardRuta {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #4a4e50;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardRuta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardRuta:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardRuta:hover .imgBxRuta img {
+    max-width: 50%; }
+  .cardRuta:hover .contentBxRuta .buy {
+    top: 0;
+    opacity: 1; }
+  .cardRuta::after {
+    content: 'Ruta';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardRuta .imgBxRuta {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardRuta .imgBxRuta img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardRuta .contentBxRuta {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardRuta .contentBxRuta h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardRuta .contentBxRuta .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardRuta .contentBxRuta .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #5c6366;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+.cardHombre {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #14384d;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardHombre::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardHombre:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardHombre:hover .imgBxHombre img {
+    max-width: 50%; }
+  .cardHombre:hover .contentBxHombre .buy {
+    top: 0;
+    opacity: 1; }
+  .cardHombre::after {
+    content: 'Hombre';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardHombre .imgBxHombre {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardHombre .imgBxHombre img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardHombre .contentBxHombre {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardHombre .contentBxHombre h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardHombre .contentBxHombre .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardHombre .contentBxHombre .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #184c69;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+.cardMujer {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #39253f;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardMujer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardMujer:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardMujer:hover .imgBxMujer img {
+    max-width: 50%; }
+  .cardMujer:hover .contentBxMujer .buy {
+    top: 0;
+    opacity: 1; }
+  .cardMujer::after {
+    content: 'Mujer';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardMujer .imgBxMujer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardMujer .imgBxMujer img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardMujer .contentBxMujer {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardMujer .contentBxMujer h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardMujer .contentBxMujer .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardMujer .contentBxMujer .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #4c3055;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+.cardAccesorio {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #523f18;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardAccesorio::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardAccesorio:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardAccesorio:hover .imgBxAccesorio img {
+    max-width: 50%; }
+  .cardAccesorio:hover .contentBxAccesorio .buy {
+    top: 0;
+    opacity: 1; }
+  .cardAccesorio::after {
+    content: 'Accesorio';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardAccesorio .imgBxAccesorio {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardAccesorio .imgBxAccesorio img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardAccesorio .contentBxAccesorio {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardAccesorio .contentBxAccesorio h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardAccesorio .contentBxAccesorio .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardAccesorio .contentBxAccesorio .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #6b511d;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif;}
+.formulario {
+  color: white;
+  text-align: center; }
+.textoContacto {
+  color: white;
+  text-align: center; }
+.contact-section {
+  background: url() no-repeat center;
+  background-size: cover;
+  padding: 40px 0; }
+  .contact-section h1 {
+    text-align: center;
+    color: #ddd; }
+.border {
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto; }
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s; }
+  .contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e; }
+textarea.contact-form-text {
+  resize: none;
+  height: 120px; }
+.contact-form-btn {
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s; }
+  .contact-form-btn:hover {
+    background: #2980b9; }
+.arriba {
+  color: white;
+}
+.arriba:hover {
+  color: white;
+}
+.arriba:active {
+  color: white;
+}
+.espacio {
+  margin-top: 50px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */ }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
